@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hpe.com.dao.UserDAO">
+
+	<insert id="insertUser" parameterType="User" keyProperty="id">
+		insert
+		into user(
+		state,
+		nickname)
+		values
+		(
+		#{state},
+		#{nickname})
+	</insert>
+
+	<select id="selectAllUsers" resultType="User">
+		select * from user
+	</select>
+	
+	<update id="updateUser" parameterType="User" >
+        update user set state=#{state},nickname=#{nickname} where id=#{id}
+    </update>
+    
+     <select id="selectUsersById" resultType="User" parameterType="int">  
+        select *  
+        from user  
+        where id=#{uid}
+    </select> 
+    
+    <delete id="delUser" parameterType="int">
+        delete from user where id=#{uid}  
+    </delete> 
+
+</mapper>
