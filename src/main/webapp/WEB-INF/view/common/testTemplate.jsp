@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="${ctx}/static/js/angularJS/angular.js">
   <title>TEST</title>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">

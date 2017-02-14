@@ -18,7 +18,7 @@
      </definition>
      
      <!-- 引用基础模板  视图名  -->
-     <definition name="*test/*" extends="defaultTemplate" >
+     <definition name="test/*" extends="testTemplate" >
      	<put-attribute name="body" value="/WEB-INF/view/test/{1}.jsp" />
      </definition>
      
