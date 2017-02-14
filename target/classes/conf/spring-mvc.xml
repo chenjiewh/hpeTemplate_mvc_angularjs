@@ -15,6 +15,9 @@
     <!-- 扫描controller（controller层注入） -->
    <context:component-scan base-package="hpe.com.controller"/>
    
+    <!-- 不拦截在webapp目录下的静态文件 -->
+   <mvc:resources mapping="/js/**" location="/js/"/>
+   
    <!-- 返回jason 格式 避免出现 返回406错误 -->
    <mvc:annotation-driven />
    
