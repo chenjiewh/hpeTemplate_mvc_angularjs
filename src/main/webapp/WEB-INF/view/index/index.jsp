@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="${ctx}/js/angular.js"></script>
+<script src="${ctx}/static/js/angularJS/angular.js"></script>
 <title>AngularJSTest</title>
 </head>
 <body ng-app="index">
@@ -70,7 +70,7 @@
                     url: update_url,
                     data: $scope.modifyUser
                 }).success(function (data, status){
-                	alert('add successful');
+                	alert( 'add successful');
                 	fetchAllUsers();
                 })
 			}
