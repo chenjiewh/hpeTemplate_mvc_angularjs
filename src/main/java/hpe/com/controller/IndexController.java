@@ -19,7 +19,7 @@ import hpe.com.model.User;
 import hpe.com.service.UserService;
 
 @Controller
-public class indexController {
+public class IndexController {
 	
 	@Autowired
     UserService userService;  //Service which will do all data retrieval/manipulation work
