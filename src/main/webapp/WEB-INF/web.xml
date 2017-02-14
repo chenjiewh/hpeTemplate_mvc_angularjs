@@ -66,13 +66,14 @@
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    <!-- 将url-patterm属性由*。do改为/ -->
     <servlet-mapping>
         <servlet-name>spring</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
  
     <welcome-file-list>
-        <welcome-file>index.do</welcome-file>
+        <welcome-file>index</welcome-file>
     </welcome-file-list>
  
     <!-- 错误跳转页面 -->
